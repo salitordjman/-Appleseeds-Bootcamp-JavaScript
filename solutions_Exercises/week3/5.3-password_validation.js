@@ -11,8 +11,12 @@
 
 // let password = a => (a.length < 7 && a.length >=0) ? "Weak" : "Strong";
 // console.log(password('dghfdh'));
+//!
+let password = a => (a.length < 7 && "Weak") || "Strong";
+console.log(password('dgvvvvvvhfdh'));
 
 
-let password = a => (a.length > 7 && a.match(/[A-Z]/g) ? "Very Strong"
-: a.length < 7 ? "Weak" : "Strong");
-console.log(password('dghfssFFshh'));
+
+// let password = a => (a.length > 7 && a.match(/[A-Z]/g) ? "Very Strong"
+// : a.length < 7 ? "Weak" : "Strong");
+// console.log(password('dghfssFFshh'));
