@@ -1,19 +1,36 @@
-const array = ["Hello", "Good Day", "Your Welcome", "hotdog", "hamburgers"];
-const waza=arr=>{
-  let count={};
-  const xx = array.join('').toLowerCase().split(' ').join('').split('')
-  xx.forEach((char) => count[char] =((count[char])? ++count[char] : 1))
-  // xx.forEach(function(i) {count[i] ? count[i]++:count[i]=1})
-  // xx.forEach(i=> count[i] ? count[i]++:count[i]=1)
-  // xx.forEach(i=> count[i] = (count[i] ? count[i]+=1 : 1))
-  // xx.forEach(i=> count[i] ? count[i]+=1 :count[i]= 1)
-  // xx.forEach(i=> count[i] ? count[i]++ :count[i]= 1)
-  //הפונ' היא count[i] שווה ל- 
-  console.log(count);
-  console.log(Math.max(...Object.values(count)));
-  };
+// const array = ["Hello", "Good Day", "Your Welcome", "hotdog", "hamburgers"];
+// const waza=arr=>{
+//   let count={};
+//   const xx = array.join('').toLowerCase().split(' ').join('').split('')
+//   xx.forEach((char) => count[char] =((count[char])? ++count[char] : 1))
+//   // xx.forEach(function(i) {count[i] ? count[i]++:count[i]=1})
+//   // xx.forEach(i=> count[i] ? count[i]++:count[i]=1)
+//   // xx.forEach(i=> count[i] = (count[i] ? count[i]+=1 : 1))
+//   // xx.forEach(i=> count[i] ? count[i]+=1 :count[i]= 1)
+//   // xx.forEach(i=> count[i] ? count[i]++ :count[i]= 1)
+//   //הפונ' היא count[i] שווה ל- 
+//   console.log(count);
+//   console.log(Math.max(...Object.values(count)));
+//   };
 
-  waza(array)
+//   waza(array)
+
+
+
+  
+  const array = ['Hello', 'Good Day', 'Your Welcome', 'hotdog', 'hamburgers'];
+  const func = (arr) => {
+    const obj = { count: { letter: '', frequency: 0 } };
+    [...arr.join('').split(' ').join('').toLowerCase()].forEach((char) => {
+      obj[char] ? obj[char]++ : (obj[char] = 1);
+      obj[char] > obj.count.frequency &&
+        obj.count.frequency++ &&
+        (obj.count.letter = char);
+    });
+    return obj;
+  };
+  console.log(func(array));
+
 
 
 
