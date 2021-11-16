@@ -35,7 +35,9 @@ const candyStore = {
   //!3333333333333333333333333-------------------------
   
   function addCandy(candyStore, id, name, price){ 
-    const count = candyStore.candies.push( {"name": name, "id": id, "price": price, "amount": 1});
+    // const count = candyStore.candies.push( {"name": name, "id": id, "price": price, "amount": 1});
+    // const count = candyStore.candies.push( {name: name, id: id, price: price, amount: 1});
+    const count = candyStore.candies.push( {name, id, price, "amount": 1});
     }
     addCandy(candyStore,"23gh4e","sambalulu",8)
     console.log(candyStore);

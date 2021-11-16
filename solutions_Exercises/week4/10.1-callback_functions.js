@@ -21,9 +21,9 @@ function dashes(str3){
 // }
 
 function firstWordUpperCase(str,callback){
-
-  // return callback(str.replace(str[0],str[0].toUpperCase()))
-  return callback(str[0].toUpperCase()+str.slice(1))
+   let strr=str.split(' ');
+  return callback(str.replace(strr[0],strr[0].toUpperCase()))
+  // return callback(strr[0].toUpperCase()+' '+strr.slice(1))
 };
 
 
@@ -40,4 +40,4 @@ function firstWordUpperCase(str,callback){
 //   return (callback(int1*int2),ccd(int1+int2))
 // };
 
-console.log(firstWordUpperCase(6,dashes))
+console.log(firstWordUpperCase('ghg dfd drrr',dashes))

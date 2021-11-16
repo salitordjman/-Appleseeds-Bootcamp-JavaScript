@@ -8,12 +8,13 @@ const obj3 = {
   Name: 'tguykty df',
   };
 
-  const mapp = new Map()
-  mapp.set(obj1, 1);
-  mapp.set(obj2, 2);
-  mapp.set(obj3, 3);
+  const mapp =new Map()
+  mapp.set(obj1, 51);
+  mapp.set(obj2, 52);
+  mapp.set(obj3, 53);
   console.log((mapp));
   for (let iMap of mapp){
-    console.log(Object.keys(iMap[0])[0]+":"+Object.values(iMap[0])[0]);
+    // console.log((iMap));
+    console.log(Object.keys(iMap[0])+":"+Object.values(iMap[0]));
   }
 
