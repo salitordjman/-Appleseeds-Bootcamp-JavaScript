@@ -4,13 +4,13 @@ we dont declare closures manually, it happens automatically in certain situation
 
 const secureBooking = function () {
   let passengerCount = 0;
-
+  
   return function () {
     passengerCount++;
     console.log(`${passengerCount} passengers`);
   };
 };
-//booker function is in the global scope
+// booker function is in the global scope
 const booker = secureBooking();
 booker();
 booker();
@@ -43,7 +43,7 @@ In other words:A closure makes sure that a function doesn't loose connection to 
 // };
 // g();
 // f();
-//console.dir(f)
+// console.dir(f)
 
 // //reassign
 
@@ -56,6 +56,6 @@ In other words:A closure makes sure that a function doesn't loose connection to 
 
 // x();
 // f();
-//console.dir(f)
+// console.dir(f)
 
 // //
