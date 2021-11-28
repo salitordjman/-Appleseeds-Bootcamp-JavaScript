@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Document</title>
+<style>
+.all{
+padding-top: 10px;
+width: 300px;
+height: 200px;
+border: 1px solid black;
+text-align: center;
+margin-top: calc(10vh + 10vw);
+margin-left: calc(25vh + 25vw);
+}
+#btn{
+  margin-top: 10px;
+  background: black;
+  color: bisque;
+}
+</style>
+</head>
+<body>
+  <section class="all">
+    <h1>Text to copy:</h1>
+    <h2>123456</h2>
+    <form class="inputs">
+      <!-- 111111111111111111111111111111111111111111111111111111111111111111 -->
+      <!-- 1aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa -->
+      <!-- <input type="text" size="1" id="txt1" onkeyup="moveup(this,txt2)" maxlength="1">
+        <input type="text" size="1" id="txt2" onkeyup="moveup(this,txt3)" maxlength="1">
+        <input type="text" size="1" id="txt3" onkeyup="moveup(this,txt4)" maxlength="1">
+        <input type="text" size="1" id="txt4" onkeyup="moveup(this,txt5)" maxlength="1">
+        <input type="text" size="1" id="txt5" onkeyup="moveup(this,txt6)" maxlength="1"> -->
+        <!-- 1bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb -->
+        <input type="text" size="1" id="txt1" maxlength="1">
+        <input type="text" size="1" id="txt2" maxlength="1">
+        <input type="text" size="1" id="txt3" maxlength="1">
+        <input type="text" size="1" id="txt4" maxlength="1">
+        <input type="text" size="1" id="txt5" maxlength="1">
+        <input type="text" size="1" id="txt6" maxlength="1">
+      </form>
+      <input id='btn' type="submit" value="Verify">
+    </section>
+  </body>
+  <script>
+    // <!-- 1aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa -->
+    //  function moveup(from,to){
+      //    if(from.value){
+        //   document.getElementById(to.id).focus();
+        //    }
+        //  }
+        
+        
+        // // <!-- 1bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb -->
+        // const myInput = document.querySelectorAll('[type="text"]');
+        // (function moveup(){
+        //   myInput.forEach((txtI,index) => {
+        //     if(txtI.value&&index<myInput.length-1){
+        //       document.getElementById(myInput[index+1].id).focus()
+        //     }
+        //     myInput[index].addEventListener('input', moveup);
+        //   });
+        //   // <!-- 33333333aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa -->
+        //   const allValues = [...myInput].every((inputEl)=>inputEl.value)
+        //   if(allValues){document.querySelector('form').submit()}
+        // })();
+        // // myInput[0].addEventListener('input', moveup);
+        
+        
+        
+        
+        // <!-- 1bbbbbbbbbbbbccccccccccccccccccccccccccccccccccccccc -->
+
+// const myInput = document.querySelectorAll('[type="text"]');
+// myInput.forEach((txtI,index) => {
+  //   txtI.addEventListener('input',()=> {
+    //   if(txtI.value&&index<myInput.length-1){
+    //     document.getElementById(myInput[index+1].id).focus()
+    //   }
+    // });
+// });
+
+
+
+// <!-- 1bbbbbbbbbbbbccccccccccddddddddddddddddddddddddddddddd -->
+
+const myInput = document.querySelectorAll('[type="text"]');
+myInput.forEach((txtI,index) => {
+  txtI.addEventListener('input',(event)=> {
+ 
+    if(event&&index<myInput.length-1){
+      document.getElementById(myInput[index+1].id).focus()
+    }
+    // <!-- 333333333333333333333333333333333333333333333333333333333333333333333333333333333 -->
+    const allValues = [...myInput].every((inputEl)=>inputEl.value)
+    if(allValues){document.querySelector('form').submit()}
+  });
+});
+
+
+// <!-- 22222222222222222222222222222222222222222222222222222222222222222222222222222222222 -->
+
+// const myInput = document.querySelectorAll('[type="text"]');
+myInput.forEach((txtI,index) => {
+  txtI.addEventListener('paste',(event)=> {
+    const paste = event.clipboardData.getData('text');
+    const pasteArr = paste.split('');
+    console.log(pasteArr);
+    for(let i=0;i<pasteArr.length;i++){
+      myInput[index+i].value=pasteArr[i];
+    }
+  
+
+
+    if(event&&index<myInput.length-1){
+      document.getElementById(myInput[index+1].id).focus()
+    }
+    // <!-- 333333333333333333333333333333333333333333333333333333333333333333333333333333333 -->
+    // const allValues = [...myInput].every((inputEl)=>inputEl.value)
+    // if(allValues){document.querySelector('form').submit()}
+  });
+});
+
+
+
+    
+    
+    
+    
+    
+  </script>
+</html>
+
+
+
+
+
+
+

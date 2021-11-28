@@ -28,11 +28,8 @@ firstLi.insertAdjacentElement('afterend',extraLi)
 // const liS =document.querySelector("li");
 // liS[7].remove()
 
-const liS =document.querySelector("ul li:last-child");
-liS.remove()
-
-// console.dir(lastLiUl1);
-
+const liS =document.querySelector("ul");
+liS.lastElementChild.remove()
 
 //!444444444444444444444444444444444444444444444444444444444444444444
 const title=document.querySelector("title");
