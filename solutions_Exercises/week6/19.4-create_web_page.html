@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Document</title>
+<style>
+</style>
+</head>
+<body>
+  
+  <script>
+
+    const h1= document.createElement("h1");
+    document.body.append(h1);
+    h1.innerText="welcome";
+    const h2= document.createElement("h2");
+    document.body.append(h2);
+    h2.innerText="obcaecati ullam culpa cupiditate tenetur maxime voluptatum expedita";
+    const p= document.createElement("p");
+    document.body.append(p);
+    p.innerText="Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse omnis consectetur ipsum obcaecati ullam culpa cupiditate tenetur maxime voluptatum expedita.";
+    const newImg= document.createElement("img");
+    newImg.src='./img/img122.jpg';
+    newImg.style.width="650px";
+    newImg.style.height="300px";
+    newImg.style.objectFit="cover";
+    newImg.style.marginLeft="5px";
+    document.body.append(newImg);
+    
+    const ol= document.createElement("ol");
+    document.body.append(ol);
+    for(let i=1;i<=10;i++){
+      const li= document.createElement("li");
+      ol.append(li);
+      li.innerText=`im no.${i}`;
+    }
+    const input= document.createElement("input");
+    document.body.append(input);
+    input.style.color="#f403f4"
+    const button= document.createElement("button");
+    document.body.append(button);
+    button.style.width="100px";
+    button.style.height="25px";
+    button.innerText="click me!!";
+    
+        
+  </script>
+</body>
+</html>
+
+
+
+
+
+
+

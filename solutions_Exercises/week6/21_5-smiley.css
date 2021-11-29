@@ -1,0 +1,17 @@
+
+form{
+  display: inline;
+}
+
+div{
+  display: flex;
+}
+figure{
+  margin-left: 5px;
+}
+.images{
+  height: 65px;
+  width: 65px;
+  object-fit: cover;
+  margin-left: 5px;
+}

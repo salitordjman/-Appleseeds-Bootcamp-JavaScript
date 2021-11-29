@@ -1,0 +1,21 @@
+.notice {
+  padding: 20px;
+  background-color: #f44336;
+  font-size: 20px;
+  width: 550px;
+  position: absolute;
+  top: 90px;
+  display: none;
+}
+.closebtn {
+  margin-left: 15px;
+  color: white;
+  font-weight: bold;
+  float: right;
+  font-size: 70px;
+  line-height: 20px;
+  cursor: pointer;
+}
+.closebtn:hover {
+  color: black;
+}

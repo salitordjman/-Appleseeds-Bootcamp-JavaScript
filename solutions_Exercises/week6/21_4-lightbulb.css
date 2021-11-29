@@ -1,0 +1,10 @@
+div{
+  height: 800px;
+  width: 650px;
+  float:left;
+  background: url(./img/light.jpg);
+  background-position: -650px -0px;
+}
+.light{
+  background-position: -80px -0px;
+}
