@@ -1,0 +1,13 @@
+.textBox {
+  background-color: #cbeedc;
+  width: 650px;
+  position: absolute;
+  top: 5px;
+  left: 40px;
+  padding: 10px;
+  line-height: 50px;
+  display: none;
+}
+button{
+  display: none;
+}

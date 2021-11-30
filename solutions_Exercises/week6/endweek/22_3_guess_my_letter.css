@@ -1,0 +1,26 @@
+.all{
+  margin-top: 10vh;
+  margin-left: 30vw;
+  height: 30vh;
+  width: 30vw;
+  background:cornsilk;
+  text-align: center;
+}
+h1{
+  padding-top: 4vh;
+}
+.letterMark{
+  font-weight: bold;
+  margin-left: 14.5vw;
+  padding: 3px;
+  width: 15px;
+  border: 2px solid black;
+}
+.keys{
+  font-weight: bold;
+  padding-top: 2vh;
+}
+button{
+  margin-top: 5px;
+  visibility:hidden;
+}

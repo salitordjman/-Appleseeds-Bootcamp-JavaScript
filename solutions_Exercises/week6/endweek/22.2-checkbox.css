@@ -1,0 +1,13 @@
+.img{
+  background-image: url('./img/img122.jpg');
+  background-repeat: no-repeat;
+  width: 80vw;
+  height: 70vh;
+  object-fit: cover;
+  margin-left: 5px;
+  background-size: 70%;
+}
+input{
+  width: 15vw;
+  height: 15vh;
+}
