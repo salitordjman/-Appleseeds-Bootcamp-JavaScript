@@ -4,12 +4,12 @@
 //קריאה לארוע אחד ולהקצות לכל שחקן מקש משלו
 //! call one event, any player have is key
 //  מעבר קלאס מאחד לשני ע"י טיגל ופור לופ
-//! the game- move from class to outer with for and tiggle
+//! the game- move from class to outer with for and toggle
 //כאשר שחקן מגיע לסוף נפתח חלון ומכריז על הזוכה ושואל אם רוצים לשחק שוב
 //! the player that come to the end he is the winner, open window that say he is the winnner and if tham want to play again
 // אם כן איפוס וקריאה מחדש לפונק'
 //! if yes than clear all and call again to the func
-
+//לרשום דברים שיכולים להשתבש
 const allTdPlayer1=document.querySelectorAll("#player1-race td");
 const allTdPlayer2=document.querySelectorAll("#player2-race td");
 const textBox=document.querySelector('section');
@@ -31,7 +31,7 @@ function moveCarBack(playerRoad){
   });
 }
 function startAgain(){
-  h2.innerHTML=``;
+  // h2.innerHTML=``;
   textBox.style.display = "none";
   iOne=1;
   iTwo=1;
@@ -53,6 +53,7 @@ function raceMove(iBoth,player){
     }
    return ++iBoth
 }
+//! 1)
 function raceStart(e){
   // if(!check){
     if(e.key==='ArrowRight'&&iOne<allTdPlayer1.length){
@@ -64,3 +65,13 @@ function raceStart(e){
 }
 
 document.body.addEventListener("keyup",raceStart);
+
+//! 1) create two varaible that represent the two players
+//! 1) create two varaible that represent the two players
+//! 1) create two varaible that represent the two players
+//! 1) create two varaible that represent the two players
+//! 1) create two varaible that represent the two players
+//! 1) create two varaible that represent the two players
+//! 6) create two varaible that represent the two players
+//! 1) create two varaible that represent the two players
+//! 8) create two varaible that represent the two players

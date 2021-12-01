@@ -3,7 +3,8 @@
 // const uls =document.querySelectorAll("ul");
 // const liNew =uls[1].querySelector("li:nth-child(2)");
 // liNew.innerText="main title"
-const liStartHere =document.querySelector('.start-here')
+const liStartHere =document.querySelector('li.start-here')
+// console.log(liStartHere);
 liStartHere.innerText="main title"
 
 //!222222222222222222222222222222222222222222222222222222222222222

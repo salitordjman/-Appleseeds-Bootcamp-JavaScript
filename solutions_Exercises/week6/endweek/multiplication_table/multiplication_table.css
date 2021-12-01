@@ -1,0 +1,13 @@
+table, td, th {
+  border: 2px solid rgb(3, 194, 67);
+ }
+ td, th {
+   width: 50px;
+   font-size: 25px;
+  } 
+ th {
+   color:salmon;
+ }
+  td:hover {
+    background-color: yellow;
+  }
