@@ -12,5 +12,7 @@ document.querySelector('button').addEventListener('click', getJoke);
           <h3>${jokeMemory.text}</h3>
         </div>
       `;
+
+      
     document.querySelector('div').innerHTML = output;
 }
