@@ -1,0 +1,21 @@
+body{
+  max-width: 100vw;
+  height: 100vh;
+}
+.gitHubUsers{
+  margin: 20px;
+  height: 400px;
+  width: 200px;
+  background: rgb(203, 231, 216);
+}
+img{
+  height: 200px;
+  width: 200px;
+  object-fit: fill;
+}
+.container{
+  width: 100%;
+  height: 100%;
+  display:flex;
+  flex-wrap: wrap;
+}
